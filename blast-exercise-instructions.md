@@ -87,7 +87,7 @@ gunzip GCF_000001405.40_GRCh38.p14_protein.faa.gz
 ## Make the protein database
 1. Create a BLAST database from the protein file:
 ``` bash
-makeblastdb -in GCF_000001405.40_GRCh38.p14_cds_from_genomic.fna -dbtype prot -out protein_db
+makeblastdb -in GCF_000001405.40_GRCh38.p14_protein.faa -dbtype prot -out protein_db
 ```
 
 ## *blastx*
