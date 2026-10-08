@@ -1,5 +1,26 @@
 # BIOL 443 — HUMAN GENETIC ANCESTRY ANALYSIS
 # PLINK 2 | 1000 Genomes + Mystery Individual
+Login to the HPC
+Go to your ocean folder
+
+### Add plink to environment
+```
+echo 'export PATH=/ocean/projects/bio260081p/shared/software/plink2:$PATH' >> ~/.bashrc
+```
+and
+```
+source ~/.bashrc
+```
+Request resources:
+```
+interact -t 3:00:00 --ntasks-per-node=4 --mem=32G
+```
+
+Copy ancestry folder into your ocean folder
+```
+cp -r /ocean/projects/bio260081p/shared/ancestry .
+```
+cd into the ancestry folder
 
 # STEP 1 — Convert chromosome names and keep autosomes
 ```
@@ -194,3 +215,5 @@ PY
 ```
 python plot_ancestry.py
 ```
+go to: https://ondemand.bridges2.psc.edu/
+login with bridges credentials
